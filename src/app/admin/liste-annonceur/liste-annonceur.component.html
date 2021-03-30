@@ -1,0 +1,48 @@
+
+
+      <section>
+          <article>
+
+<div class="container">
+
+    <h1 class="display-4 pt-5 mb-0"> Liste des Annonceurs</h1>
+    <div class="search__container mb-1">
+    <input class="search__input" type="text" [(ngModel)]="name" (input)="Search()" placeholder="Chercher par nom">
+   </div>
+ 
+   
+    <table class="responsive-table">
+     
+      <thead>
+        <tr>
+          <th scope="col">nom</th>
+          <th scope="col">numero</th>
+          <th scope="col">email</th>
+
+          <th scope="col">message</th>
+          <th scope="col">Gestion</th>
+        </tr>
+      </thead>
+      <tfoot>
+       
+      </tfoot>
+      <tbody>
+        <tr *ngFor="let annonceur of annonceurs; let i = index">
+          <th scope="row">{{ annonceur.nom }}</th>
+          <td data-title="Released">{{ annonceur.numero }}</td>
+          <td data-title="Studio">{{ annonceur.email }}</td>
+       
+          <td data-title="Budget">{{ annonceur.message }}</td>
+          <td data-title="Budget">
+          <div class="ml-auto">
+              <button class="btn btn-danger m-1" type="button" (click)="onDeleteannonceur(i)" ><i class="fas fa-trash-alt"></i></button>
+         
+            </div>
+          </td>
+        </tr>
+         
+      </tbody>
+    </table>
+  </div>
+</article>
+</section>

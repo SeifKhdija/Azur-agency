@@ -1,0 +1,95 @@
+<div class="row">
+  <div class="col-9 ">
+    
+    <div class="shadow p-3 mt-5 mb-5 bg-white rounded">
+
+<form class="text-center border border-light p-5" [formGroup]="AnnonceursForm" (ngSubmit)="onSubmitAnnonceursForm()">
+
+  <p class="h4 mb-4">Proposez un bien</p>
+
+    <div class="form-row mb-4">
+        <div class="col">
+            <!-- First name -->
+            <input type="text" id="defaultRegisterFormFirstName" class="form-control" placeholder="Nom et Prenom" formControlName="nom">
+        </div>
+        <div class="col">
+            <!-- Last name -->
+            <input type="text" id="defaultRegisterFormLastName" class="form-control" placeholder="Num-tel" formControlName="numero">
+        </div>
+    </div>
+    <input type="email" id="defaultRegisterFormEmail" class="form-control mb-4" placeholder="email" formControlName="email"  >
+    <input type="text" id="defaultRegisterFormEmail" class="form-control mb-4" placeholder="localisation de bien" formControlName="localisation">
+
+      <div class="input-group mb-3">
+        <div class="input-group-prepend">
+      <label class="input-group-text" for="inputGroupSelect01">Choisir votre type de bien</label>
+    </div>
+    <select class="custom-select" id="inputGroupSelect01" formControlName="type">
+      <option selected>-</option>
+      <option value="maison">Maison</option>
+      <option value="maison">Villa</option>
+      <option value="appartement">Appartement</option>
+      <option value="terrain">terrain</option>
+      <option value="commerciale">locaux commerciaux</option>
+      <option value="bureau">Bureau</option>
+   
+      
+    </select>
+  </div>
+  <div class="input-group mb-3">
+    <div class="input-group-prepend">
+  <label class="input-group-text" for="inputGroupSelect01">NB de piéces</label>
+</div>
+<select class="custom-select" id="inputGroupSelect01" formControlName="nbchambres">
+  <option selected>-</option>
+  <option value="1">1</option>
+  <option value="2">2</option>
+  <option value="3">3</option>
+  <option value="4">4</option>
+  <option value="5">5 et plus</option>
+  
+</select>
+</div>
+<div class="input-group mb-3">
+  <div class="input-group-prepend">
+    <label class="input-group-text" for="inputGroupSelect01">Bien à</label>
+  </div>
+  <select class="custom-select" id="inputGroupSelect01" formControlName="specification">
+    <option selected>Choisir</option>
+    <option value="Location">Location</option>
+    <option value="Vente">Vente</option>
+    
+  </select>
+</div>
+       
+    <div class="form-row mb-4">
+        <div class="col">
+            <!-- First name -->
+            <input type="text" id="defaultRegisterFormFirstName" class="form-control" placeholder="surface" formControlName="surface">
+        </div>
+        <div class="col">
+          <!-- First name -->
+          <input type="text" id="defaultRegisterFormFirstName" class="form-control" placeholder="prix" formControlName="price">
+      </div>
+    </div>
+    
+
+    <!-- Phone number -->
+    <div class="form-group">
+        <textarea class="form-control w-100" rows="4" placeholder="message" formControlName="message"></textarea>
+      </div>
+   
+
+    <!-- Sign up button -->
+    
+    <input type="submit" value="Submit" class="w-50">
+
+    <!-- Social register -->
+    
+
+</form>
+</div>
+</div>
+  <app-recherche-aside></app-recherche-aside>
+  
+</div>

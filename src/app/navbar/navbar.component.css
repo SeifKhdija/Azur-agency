@@ -1,0 +1,175 @@
+
+
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  background-color: #0088ff;
+  font-family: "Raleway", sans-serif;
+}
+
+#container {
+  position: relative;
+  width: 100%;
+  
+  background-color: white;
+  box-shadow: -2px -2px 5px white, 2px -2px 5px white;
+}
+#container > nav {
+  width: 100%;
+  display: flex;
+  max-height: 80px;
+  z-index: 5;
+}
+#logo {
+  line-height: 60px;
+  font-size: 30px;
+  padding: 0 40px;
+  color: white;
+  width: 40%;
+  letter-spacing: 2px;
+  text-shadow: 2px 2px 5px;
+}
+#container > nav > ul {
+  margin: 0;
+  z-index: 5;
+  list-style-type: none;
+  display: flex;
+  position: absolute;
+  left: 190px;
+  /*   min-width:60%; */
+}
+#container > nav > ul > li {
+  line-height: 60px;
+  margin: 0 0px;
+  padding: 0;
+  text-align: center;
+  display: inline-block;
+  z-index: 5;
+
+
+  /*   background-color:green; */
+  min-width: 120px;
+}
+#container > nav > ul > li > a {
+  position: relative;
+  /*   background-color:red; */
+
+  z-index: 5;
+  font-weight: 500;
+    color: black;
+    font-size: 13px;
+    text-decoration: none;
+    text-transform: uppercase;
+
+}
+#container > nav > ul > li:hover {
+  border-bottom: 5px solid #0088ff;
+  background-color: deeppink;
+
+}
+#container > nav > ul > .dropdown:hover {
+  border-bottom: none;
+  
+
+}
+
+#container > nav > ul > .dropdown:hover > .dd {
+  display: block;
+  width: 100%;
+}
+#container > nav > ul > .dropdown:hover > .ddd {
+  display: block;
+  width: 160%;
+
+}
+#container > nav > ul > .dropdown:hover > .dddd {
+  display:block;
+  width: 220%;
+margin-left: -100px;
+}
+.dropdown:hover > a .fa-caret-down {
+  display: none;
+  z-index: 5;
+ 
+}
+a {
+  text-decoration: none;
+}
+
+#container > nav > ul > li > div {
+  position: absolute;
+  
+
+  background-color: black;
+  display: none;
+  background-color: aliceblue;
+  width: 100%;
+  z-index: 5;
+  text-align: left;
+
+}
+
+#container > nav > ul > li > div > ul {
+  margin: 0px 0 10px 0;
+  padding: 0;
+  list-style: none;
+  z-index: 5;
+
+}
+#u_a_c {
+  position: relative;
+  width: 100%;
+  /*   background-color:red; */
+}
+#up_arrow {
+  position: relative;
+  width: 20px;
+  height: 20px;
+  left: 42%;
+  top: -10px;
+  background-color: aliceblue;
+  transform: rotate(45deg);
+}
+#up_arrow2 {
+  position: relative;
+  width: 20px;
+  height: 20px;
+  left: 25%;
+  top: -10px;
+  background-color: aliceblue;
+  transform: rotate(45deg);
+}
+#container > nav > ul > li > div > ul > li:hover {
+  background-color: rgba(0, 0, 0, 0.2);
+  z-index: 5;
+
+}
+#container > nav > ul > li > div > ul > li > a {
+  padding: 5px;
+  padding-left:15px;
+  
+  z-index: 5;
+  font-weight: 500;
+    color: black;
+    font-size: 13px;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+#container > nav > ul > li > div > ul > li:hover{
+  background-color: deeppink;
+}
+.navbar .dropdown-menu .form-control {
+  width: 150px;
+}
+ul.dropdown-lr {
+  width: 200px;
+}
+.form-group{
+  padding :10px;
+}
+.btn-primary{
+  background-color: deeppink;
+  border: deeppink;
+}

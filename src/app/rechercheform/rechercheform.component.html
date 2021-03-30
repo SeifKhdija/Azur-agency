@@ -1,0 +1,180 @@
+
+
+<body>
+
+  <div class="main">
+      
+      <div class="header">
+         
+      </div>
+      <div class="container">
+
+          <form class="booking-form" [formGroup]="rechercheForm" (ngSubmit)="Onsubmitrechercher()">
+ 
+                
+                
+                <!-- Default inline 3-->
+               
+           
+              <div class="form-group">
+                <div class="form-group col-3">
+                <label class="radio-inline">
+                  <input type="radio" name="optradio" checked>Location</label>
+                <label class="radio-inline">
+                  <input type="radio" name="optradio">Vente</label>
+                <label class="radio-inline">
+                  <input type="radio" name="optradio">Vacance</label>
+                  </div>
+
+                </div>
+                <hr>
+                  <!-- Default inline 1-->
+                  <div class="form-group">
+                  <div class="form-group col-3">
+                 
+                  <select class="custom-select" id="inputGroupSelect01">
+                    <option selected>Localisation</option>
+                    
+                      <option value="kairouan"> kairouan</option>
+                      <option value="kalaa-kebira"> Kalaa Kebira</option>
+                      <option value="kalaa-sghira"> Kalaa Sghira</option>
+                      <option value="mahdia"> Mahdia</option>
+                      <option value="monastir"> Monastir</option>
+                      <option value="dkhila">-  Dkhila</option>
+                      <option value="skanes">-  Skanes</option>
+                      <option value="sousse"> Sousse</option>
+                      <option value="akouda">-  Akouda</option>
+                      <option value="bouhsina">-  Bouhsina</option>
+                      <option value="chott-mariem">-  Chott Mariem</option>
+                      <option value="cite-militaire">-  Cité militaire</option>
+                      <option value="cite-riadh">-  Cité Riadh</option>
+                      <option value="el-kantaoui">-  El Kantaoui</option>
+                      <option value="hammam-sousse">-  Hammam Sousse</option>
+                      <option value="hergla">-  Hergla</option>
+                      <option value="kalaa-sghira-sousse">-  Kalaa sghira</option>
+                      <option value="khzema">-  Khzema</option>
+                      <option value="khzema-ouest">-  Khzema ouest</option>
+                      <option value="msaken">-  M'saken</option>
+                      <option value="route-touristique">-  Route touristique</option>
+                      <option value="sahloul">-  Sahloul</option>
+                      <option value="sousse-ville">-  Sousse ville</option>
+                      <option value="any">Tout</option>
+                    </select>
+                    
+                </div>
+                 
+                      <!--<label for="date_from">Type de bien</label>-->
+                      <!--<input type="text" id="date_from" class="date_from" placeholder="Pick a date" />-->
+                      <!--<select class="custom-select" id="date_from">
+                          <option selected>Type de bien</option>
+                          <option value="maison">Maison</option>
+                          <option value="maison">Villa</option>
+                          <option value="appartement">Appartement</option>
+                          <option value="terrain">terrain</option>
+                          <option value="commerciale">locaux commerciaux</option>
+                          
+                        </select>
+                      -->
+                      <div class="form-group col-3">
+                        
+                          <select class="custom-select" id="inputGroupSelect01" formControlName="type">
+                            <option selected>Type de bien</option>
+                            <option value="Maison">Maison</option>
+                            <option value="villa">Villa</option>
+                            <option value="Appartement">Appartement</option>
+                            <option value="terrain agricole">terrain agricole</option>
+                            <option value="terrain habitation">terrain habitation</option>
+                            <option value="commerciale">locaux commerciaux</option>
+                            
+                          </select>
+                        </div>
+                      <!-- <span class="icon"><i class="zmdi zmdi-calendar-alt"></i></span> -->
+                  
+                
+                      <div class="form-group col-2">
+                        
+                        <select class="custom-select" id="inputGroupSelect01" formControlName="nbpiece">
+                          <option selected>nb de piéces</option>
+                          <option value="1">1</option>
+                          <option value="2">2</option>
+                          <option value="3">3</option>
+                          <option value="4">4</option>
+                          <option value="5">5 et plus</option>
+                          
+                        </select>
+                      </div>
+                      <div class="form-group col-2">
+                          <input type="text" placeholder="Budget" class="form-control" formControlName="prix">
+                      </div>
+                
+                  <!--
+               <div class="form-date-to form-icon">
+                     <label for="date_to"></label>
+                     
+                     <input type="text" id="date_to" class="date_to" placeholder="N° de piéces" />
+                      <span class="icon"><i class="zmdi zmdi-calendar-alt"></i></span> 
+                  </div> 
+                  <div class="form-date-to form-icon">
+                      <label for="date_to"></label>
+                      
+                      <input type="text" id="date_to" class="date_to" placeholder="Budget" />
+                       <span class="icon"><i class="zmdi zmdi-calendar-alt"></i></span> 
+                   </div> 
+                   -->
+                  <!-- <span class="search-input l-160">
+                      <input type="text" placeholder="N&deg; pi&egrave;ce" name="NbrPieces" id="NbrPieces">
+                      <i class="fa fa-bed"></i></span> 
+                      <span class="search-input l-160">
+                      <input type="text" placeholder="Budget" name="Budget" id="Budget">
+                      <i class="fa fa-eur"></i> </span> -->
+                  <!-- <span class="submit-btn">
+      <button class="submit" type="submit"><i class="fa fa-search"></i> Rechercher</button>
+      </span>
+  -->
+                <div class="form-submit">
+                      
+                      <button type="submit" id="submit" class="submit" value= "Rechercher"><i class="fa fa-search" ></i> Recherche</button>
+
+                  </div> 
+              </div>
+             
+              <div class="form-group">
+                <!-- Default inline 1-->
+
+               
+               
+                    <!--<label for="date_from">Type de bien</label>-->
+                    <!--<input type="text" id="date_from" class="date_from" placeholder="Pick a date" />-->
+                    <!--<select class="custom-select" id="date_from">
+                        <option selected>Type de bien</option>
+                        <option value="maison">Maison</option>
+                        <option value="maison">Villa</option>
+                        <option value="appartement">Appartement</option>
+                        <option value="terrain">terrain</option>
+                        <option value="commerciale">locaux commerciaux</option>
+                        
+                      </select>
+                    -->
+                    
+                    <!-- <span class="icon"><i class="zmdi zmdi-calendar-alt"></i></span> -->
+                
+               
+                    <div style="margin-left:8px;"class="form-group col-3 " >
+                        <input type="text" placeholder="Référence" class="form-control" formControlName="ref">
+                    </div>
+                    <div style="margin-left:-180px;" class="form-groupp col-3">
+                      <input type="text" placeholder="Surface" class="form-control" formControlName="surface">
+                  </div>
+             
+              <div class="form-submit">
+                    
+
+                </div> 
+            </div>
+          </form>
+      </div>
+
+  </div>
+
+
+</body>

@@ -1,0 +1,132 @@
+<div class="row">
+    <div class="col-9 ">
+      
+      <div class="shadow p-3 mt-5 mb-5 bg-white rounded">
+        <div class="container">
+
+        
+            <div class="wrapper">
+        
+                <!-- COMPANY INFORMATION -->
+                <div class="company-info">
+                    <h4> LETAIEF IMMOBILIERE</h4>
+        
+                    <ul>
+                        <li><i class="fa fa-road"></i>52 Rue de la paix, 4011 Hammam Sousse</li>
+                        <li><i class="fa fa-phone"></i>+(216) 97 083 400</li>
+                        <li><i class="fa fa-phone"></i>+(216) 93 083 400</li>
+                        <li><i class="fa fa-phone"></i>+(216) 97 091 023</li>
+                        <li><i class="fa fa-envelope"></i>letaief.immobiliere@gmail.com</li>
+                    </ul>
+                </div>
+                <!-- End .company-info -->
+        
+                <!-- CONTACT FORM -->
+                <div class="contact">
+                    <h3>Contactez-nous</h3>
+        
+                    <form [formGroup]="ContactsForm" (ngSubmit)="onSubmitContactsForm()">
+        
+                        <p>
+                            <label>Nom</label>
+                            <input type="text" name="nom" id="nom" formControlName="nom">
+                        </p>
+        
+                        <p>
+                            <label>Prenom</label>
+                            <input type="text" name="prenom" id="prenom" formControlName="prenom">
+                        </p>
+        
+                        <p>
+                            <label>E-mail Address</label>
+                            <input type="email" name="email" id="email" formControlName="email" required>
+                        </p>
+        
+                        <p>
+                            <label>Numéro de téléphone</label>
+                            <input type="text" name="numero" id="numero" formControlName="numero">
+                        </p>
+        
+                        <p class="full">
+                            <label>Message</label>
+                            <textarea name="message" rows="5" id="message" formControlName="message" required></textarea>
+                        </p>
+        
+                        <p class="full">
+                            <button type="submit">Envoyer</button>
+                        </p>
+        
+                    </form>
+                    <!-- End #contact-form -->
+                </div>
+                <!-- End .contact -->
+        
+            </div>
+            <!-- End .wrapper -->
+        </div>
+        <!-- End .container -->
+</div>
+</div>
+<div class="col-3 shadow p-3 mt-5 mb-5 bg-white rounded">
+    <h3> <i class="fas fa-search"></i>
+      Trouvez votre bien</h3>
+    <div class="container">
+      <form action="/action_page.php">
+        <label for="country">Localisation</label>
+        <select id="country" name="country">
+          <option value="kairouan"> kairouan</option>
+          <option value="kalaa-kebira"> Kalaa Kebira</option>
+          <option value="kalaa-sghira"> Kalaa Sghira</option>
+          <option value="mahdia"> Mahdia</option>
+          <option value="monastir"> Monastir</option>
+          <option value="dkhila">-  Dkhila</option>
+          <option value="skanes">-  Skanes</option>
+          <option value="sousse"> Sousse</option>
+          <option value="akouda">-  Akouda</option>
+          <option value="bouhsina">-  Bouhsina</option>
+          <option value="chott-mariem">-  Chott Mariem</option>
+          <option value="cite-militaire">-  Cité militaire</option>
+          <option value="cite-riadh">-  Cité Riadh</option>
+          <option value="el-kantaoui">-  El Kantaoui</option>
+          <option value="hammam-sousse">-  Hammam Sousse</option>
+          <option value="hergla">-  Hergla</option>
+          <option value="kalaa-sghira-sousse">-  Kalaa sghira</option>
+          <option value="khzema">-  Khzema</option>
+          <option value="khzema-ouest">-  Khzema ouest</option>
+          <option value="msaken">-  M'saken</option>
+          <option value="route-touristique">-  Route touristique</option>
+          <option value="sahloul">-  Sahloul</option>
+          <option value="sousse-ville">-  Sousse ville</option>
+          <option value="any" selected="selected">Tout</option>
+        </select>
+        <label for="country">Type de Bien</label>
+        <select id="country" name="country">
+          <option value="maison">Maison</option>
+      <option value="maison">Villa</option>
+      <option value="appartement">Appartement</option>
+      <option value="terrain">terrain</option>
+      <option value="commerciale">locaux commerciaux</option>
+      <option value="bureau">Bureau</option>
+        </select>
+        <label for="lname">NB de pieces</label>
+        <select id="country" name="country">
+        <option value="maison">1</option>
+        <option value="maison">2</option>
+        <option value="appartement">3</option>
+        <option value="terrain">4</option>
+        <option value="commerciale">5 et plus</option>
+        </select>
+        <label for="lname">Budget</label>
+        <input type="text" id="lname" name="lastname" placeholder="DT">
+        <label for="lname">Reference</label>
+        <input type="text" id="lname" name="lastname" placeholder="#">
+        <label for="lname">Surface</label>
+        <input type="text" id="lname" name="lastname" placeholder="m2">
+       
+      
+        <input type="submit" value="Submit">
+      </form>
+    </div>
+
+  </div>
+  </div>

@@ -1,0 +1,35 @@
+<div class="login-wrap">
+    <div class="login-html">
+      <input id="tab-1" type="radio" name="tab" class="sign-in" checked><label for="tab-1" class="tab">Créer un compte</label>
+      <div class="login-form">
+        <form [formGroup]="signupForm" (ngSubmit)="onSubmitSignupForm()">
+          <div class="group">
+            <div class="group">
+              <label for="user" class="label">Nom</label>
+              <input id="user" type="text" class="input" formControlName="name" >
+            </div>
+            <div class="group">
+              <label for="user" class="label">Prenom</label>
+              <input id="user" type="text" class="input" formControlName="lastname">
+            </div>
+            <div class="group">
+              <label for="user" class="label">Num telephone</label>
+              <input id="user" type="text" class="input" formControlName="numtel">
+            </div>
+          
+            <label for="user" class="label">Email</label>
+            <input id="user" type="text" class="input" formControlName="email">
+          </div>
+          <div class="group">
+            <label for="pass" class="label">Mot de passe</label>
+            <input id="pass" type="password" class="input" data-type="password" formControlName="password">
+          </div>  
+          <div class="hr"></div>
+          <div class="group">
+            <input type="submit" class="button" value="Créer un compte"[disabled]="signupForm.invalid">
+          </div>
+          <br>
+        
+         
+         
+  </form>

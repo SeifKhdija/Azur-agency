@@ -1,0 +1,122 @@
+<div class="row">
+    <div class="col-9 ">
+      
+      <div class="shadow p-3 mt-5 mb-5 bg-white rounded">
+  <div class="title">
+  
+    <p>Bureaux à louer</p>
+    </div>
+    <div *ngFor="let property of proporties ; let i = index">
+      <div *ngIf = "getterrain(i)">
+    <div class="blog-card">
+      
+    <div class="meta">
+      <div *ngFor="let photo of property.photos; let first = first">
+        <img style="height: 200px; width: 300px;"[src]="photo" *ngIf="first" class="photo">
+    </div>
+      <ul class="details">
+        <li>Reference: {{property.reference}}</li>
+        <li>Localisation: Sousse</li>
+        <li>type: {{property.category}}</li>
+        <li>surface: {{property.surface}}m<sup>2</sup></li>
+        <li>prix: {{property.price}}</li>
+      </ul>
+    </div>
+    <div class="description">
+      <h1>{{property.title}}</h1>
+      <p> {{property.description2}}</p>
+      <p class="read-more">
+        <a [routerLink]="['/property', i]">Voir bien <i class="fas fa-eye"></i></a>
+      </p>
+    </div>
+  </div>
+  </div>
+  </div>
+  
+  </div>
+      </div>
+     
+      <div class="col-3 shadow p-3 mt-5 mb-5 bg-white rounded">
+        <h3> <i class="fas fa-search"></i>
+          Trouvez votre bien</h3>
+        <div class="container">
+          <form action="/action_page.php">
+            <label for="country">Localisation</label>
+            <select id="country" name="country">
+              <option value="kairouan"> kairouan</option>
+              <option value="kalaa-kebira"> Kalaa Kebira</option>
+              <option value="kalaa-sghira"> Kalaa Sghira</option>
+              <option value="mahdia"> Mahdia</option>
+              <option value="monastir"> Monastir</option>
+              <option value="dkhila">-  Dkhila</option>
+              <option value="skanes">-  Skanes</option>
+              <option value="sousse"> Sousse</option>
+              <option value="akouda">-  Akouda</option>
+              <option value="bouhsina">-  Bouhsina</option>
+              <option value="chott-mariem">-  Chott Mariem</option>
+              <option value="cite-militaire">-  Cité militaire</option>
+              <option value="cite-riadh">-  Cité Riadh</option>
+              <option value="el-kantaoui">-  El Kantaoui</option>
+              <option value="hammam-sousse">-  Hammam Sousse</option>
+              <option value="hergla">-  Hergla</option>
+              <option value="kalaa-sghira-sousse">-  Kalaa sghira</option>
+              <option value="khzema">-  Khzema</option>
+              <option value="khzema-ouest">-  Khzema ouest</option>
+              <option value="msaken">-  M'saken</option>
+              <option value="route-touristique">-  Route touristique</option>
+              <option value="sahloul">-  Sahloul</option>
+              <option value="sousse-ville">-  Sousse ville</option>
+              <option value="any" selected="selected">Tout</option>
+            </select>
+            <label for="country">Type de Bien</label>
+            <select id="country" name="country">
+              <option value="maison">Maison</option>
+          <option value="maison">Villa</option>
+          <option value="appartement">Appartement</option>
+          <option value="terrain">terrain</option>
+          <option value="commerciale">locaux commerciaux</option>
+          <option value="bureau">Bureau</option>
+            </select>
+            <label for="lname">NB de pieces</label>
+            <select id="country" name="country">
+            <option value="maison">1</option>
+            <option value="maison">2</option>
+            <option value="appartement">3</option>
+            <option value="terrain">4</option>
+            <option value="commerciale">5 et plus</option>
+            </select>
+            <label for="lname">Budget</label>
+            <input type="text" id="lname" name="lastname" placeholder="DT">
+            <label for="lname">Reference</label>
+            <input type="text" id="lname" name="lastname" placeholder="#">
+            <label for="lname">Surface</label>
+            <input type="text" id="lname" name="lastname" placeholder="m2">
+           
+          
+            <input type="submit" value="Submit">
+          </form>
+          
+        </div>
+    
+      </div>
+    
+      </div>
+    
+  <!--
+  <nav class="pagination-container">
+    <div class="pagination">
+        <a class="pagination-newer" href="#">PREV</a>
+        <span class="pagination-inner">
+          <a href="#">1</a>
+          <a class="pagination-active" href="#">2</a>
+          <a href="#">3</a>
+          <a href="#">4</a>
+          <a href="#">5</a>
+          <a href="#">6</a>
+        </span>
+        <a class="pagination-older" href="#">NEXT</a>
+    </div>
+  </nav>
+  -->
+  
+  

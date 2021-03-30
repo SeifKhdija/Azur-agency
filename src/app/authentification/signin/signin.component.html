@@ -1,0 +1,37 @@
+<div class="login-wrap">
+  <div class="login-html">
+    <input id="tab-1" type="radio" name="tab" class="sign-in" checked><label for="tab-1" class="tab">Se connecter</label>
+    <div class="login-form">
+      <form [formGroup]="signinForm" (ngSubmit)="onSubmitSigninForm()">
+        <div class="group">
+          <label for="user" class="label">Email</label>
+          <input id="user" type="text" class="input" formControlName="email">
+        </div>
+        <div class="group">
+          <label for="pass" class="label">Mot de passe</label>
+          <input id="pass" type="password" class="input" data-type="password" formControlName="password">
+        </div>
+        <div class="hr"></div>
+        <div class="group">
+          <input type="submit" class="button" value="Se connecter" [disabled]="signinForm.invalid">
+        </div>
+        <br>
+      <!--
+        <div class="formGroup">
+       
+          <a (click)="FacebookAuth()" class="fb btn">
+            <i class="fab fa-facebook-f"></i> Se connecter avec Facebook
+           </a>
+          </div>
+          <div class="formGroup">
+       
+<a class="compte" [routerLink]="['/signup']">
+              n'a pas un compte ?
+             </a>
+            </div>
+          -->
+</form>
+   
+    </div>
+  </div>
+</div>

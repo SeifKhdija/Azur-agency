@@ -1,0 +1,60 @@
+<div class="row">
+    <div class="col-9 ">
+      
+      <div class="shadow p-3 mt-5 mb-5 bg-white rounded">
+  <div class="title">
+  
+    <p>Les terrains agricoles</p>
+    </div>
+    <div *ngFor="let property of proporties; let i = index">
+      <div *ngIf = "getterrain(i)">
+    <div class="blog-card">
+      
+    <div class="meta">
+      <div *ngFor="let photo of property.photos; let first = first">
+        <img style="height: 200px; width: 300px;"[src]="photo" *ngIf="first" class="photo">
+    </div>
+      <ul class="details">
+        <li>Reference: {{property.reference}}</li>
+        <li>Localisation: Sousse</li>
+        <li>type: {{property.category}}</li>
+        <li>surface: {{property.surface}}m<sup>2</sup></li>
+        <li>prix: {{property.price}}</li>
+      </ul>
+    </div>
+    <div class="description">
+      <h1>{{property.title}}</h1>
+      <p> {{property.description2}}</p>
+      <p class="read-more">
+        <a [routerLink]="['/property', i]">Voir bien <i class="fas fa-eye"></i></a>
+      </p>
+    </div>
+  </div>
+  </div>
+  </div>
+  
+  </div>
+      </div>
+     
+      <app-recherche-aside></app-recherche-aside>
+    
+      </div>
+    
+  <!--
+  <nav class="pagination-container">
+    <div class="pagination">
+        <a class="pagination-newer" href="#">PREV</a>
+        <span class="pagination-inner">
+          <a href="#">1</a>
+          <a class="pagination-active" href="#">2</a>
+          <a href="#">3</a>
+          <a href="#">4</a>
+          <a href="#">5</a>
+          <a href="#">6</a>
+        </span>
+        <a class="pagination-older" href="#">NEXT</a>
+    </div>
+  </nav>
+  -->
+  
+  

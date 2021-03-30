@@ -1,0 +1,184 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto");
+.container-fluid{
+    margin-top: 35px;
+  }
+  a.animated-button:link, a.animated-button:visited {
+    position: relative;
+    display: block;
+    margin: 30px auto 0;
+    padding: 14px 15px;
+    color: #fff;
+    font-size:14px;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    overflow: hidden;
+    letter-spacing: .08em;
+    border-radius: 0;
+    text-shadow: 0 0 1px rgba(0, 0, 0, 0.2), 0 1px 0 rgba(0, 0, 0, 0.2);
+    -webkit-transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    -o-transition: all 1s ease;
+    transition: all 1s ease;
+  }
+  a.animated-button:link:after, a.animated-button:visited:after {
+    content: "";
+    position: absolute;
+    height: 0%;
+    left: 50%;
+    top: 50%;
+    width: 150%;
+    z-index: -1;
+    -webkit-transition: all 0.75s ease 0s;
+    -moz-transition: all 0.75s ease 0s;
+    -o-transition: all 0.75s ease 0s;
+    transition: all 0.75s ease 0s;
+  }
+  a.animated-button:link:hover, a.animated-button:visited:hover {
+    color: #FFF;
+    text-shadow: none;
+  }
+  a.animated-button:link:hover:after, a.animated-button:visited:hover:after {
+    height: 450%;
+  }
+  a.animated-button:link, a.animated-button:visited {
+    position: relative;
+    display: block;
+    margin: 30px auto 0;
+    padding: 14px 15px;
+    color:black;
+    font-size:14px;
+    border-radius: 0;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    overflow: hidden;
+    letter-spacing: .08em;
+    text-shadow: 0 0 1px rgba(0, 0, 0, 0.2), 0 1px 0 rgba(0, 0, 0, 0.2);
+    -webkit-transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    -o-transition: all 1s ease;
+    transition: all 1s ease;
+  }
+  
+  /* Victoria Buttons */
+  
+  a.animated-button.victoria-one {
+    border: 2px solid #E3088F;
+  }
+  a.animated-button.victoria-one:after {
+    background: #E3088F;
+    -moz-transform: translateX(-50%) translateY(-50%) rotate(-25deg);
+    -ms-transform: translateX(-50%) translateY(-50%) rotate(-25deg);
+    -webkit-transform: translateX(-50%) translateY(-50%) rotate(-25deg);
+    transform: translateX(-50%) translateY(-50%) rotate(-25deg);
+  }
+  .row{
+    margin-bottom: 50px;
+  }
+  .flex {
+    display: -webkit-flex;
+    display: block;
+    
+    -webkit-justify-content: flex-start;
+    justify-content: flex-start;
+    
+  }
+  
+  .slider-wrapper div {
+    position: relative;
+  }
+  .slider-wrapper {
+    margin-top: 5vw;
+    margin-left: 11vw;
+  }
+  .slide-image {
+    height: 1vw;
+    margin-top: 30px;
+  }
+  .slide-image img {
+    padding-top: 50px;
+    width: 25vw;
+    cursor: pointer;
+    margin-left: 350px;
+  }
+  .slide-content {
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 0.0625em 0.0625em, rgba(0, 0, 0, 0.25) 0px 0.125em 0.5em, rgba(255, 255, 255, 0.1) 0px 0px 0px 1px inset;
+    width: 50vw;
+    color: black;
+    margin-bottom: 30px;
+    margin-left: 220px;
+  margin-top: 130px;
+  padding-left: 50px;
+  padding-top: 50px;
+  padding-right: 50px;
+  padding-bottom: 10px;
+  }
+  .slide-date {
+    color: #0a8acb;
+    font-size: 1.1vw;
+    font-weight: 400;
+    letter-spacing: 0.1vw;
+    padding-bottom: 1.4vw;
+  }
+  .slide-title {
+    font-size: 1.2vw;
+    font-weight: 400;
+    letter-spacing: 0.1vw;
+    line-height: 1.55vw;
+    padding-bottom: 1.8vw;
+  }
+  .slide-text {
+    font-size: 1vw;
+    line-height: 1.8vw;
+    opacity: 0.8;
+    padding-bottom: 4vw;
+  }
+  .slide-more {
+    font-weight: 400;
+    letter-spacing: 0.1vw;
+    float: left;
+    font-size: 1vw;
+  }
+  a{
+    color:  #D8D2CB;
+  }
+  .nav-item{
+    margin-left: 15px;
+  }
+.navbar{
+  background-color:#117a8b;
+ 
+  font-family: "Merriweather Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-weight: 700;
+
+  font-size: 0.95rem;
+  padding: 0.75rem 0;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.4rem 1rem;
+}
+.navbar-toggler {
+  padding: 0.25rem 0.75rem;
+  font-size: 1.25rem;
+  line-height: 1;
+  background-color:var(--cyan);
+  border: 1px solid transparent;
+  border-radius: 0.25rem;
+}
+.navbar-toggler:hover, .navbar-toggler:focus {
+  text-decoration: none;
+}
+
+.navbar-toggler-icon {
+  display: inline-block;
+  width: 1.5em;
+  height: 1.5em;
+  vertical-align: middle;
+  content: "";
+  background: no-repeat center center;
+  background-size: 100% 100%;
+}
+  
